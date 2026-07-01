@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero.jpg";
 import doctorImg from "@/assets/doctor.jpg";
 import {
   Phone, MapPin, Clock, Star, Leaf, HeartPulse, Baby, Brain, Sparkles,
-  Activity, Wind, Droplets, Bone, Moon, Scale, ShieldCheck, Flower2,
+  Activity, Wind, Droplets, Bone, Moon, Scale, ShieldCheck, Flower2, Instagram, Pill,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
