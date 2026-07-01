@@ -231,15 +231,16 @@ function Home() {
             </div>
           </div>
           <div className="md:col-span-3">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">About the clinic</div>
+            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Meet the doctor</div>
             <h2 className="font-display text-4xl md:text-5xl mt-3">
-              Homeopathy that listens, first.
+              Dr. Sushma Debadwar
             </h2>
+            <div className="mt-2 text-muted-foreground">B.H.M.S · Classical Homeopath</div>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              At Shri Laxmi Homeopathic Clinic, every consultation begins with
-              understanding you — your history, lifestyle and lived experience.
-              We then craft a gentle, individualised remedy plan grounded in
-              classical homeopathy.
+              At Shri Laxmi Homeopathic Clinic, every consultation with Dr. Sushma
+              begins with understanding you — your history, lifestyle and lived
+              experience. She then crafts a gentle, individualised remedy plan
+              grounded in classical homeopathy, trusted by families across Pimpri-Chinchwad.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
