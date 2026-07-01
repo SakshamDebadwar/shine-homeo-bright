@@ -104,7 +104,7 @@ function Home() {
                   <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
                 ))}
               </span>
-              <span className="text-muted-foreground">4.9 · 22+ Google Reviews</span>
+              <span className="text-muted-foreground">4.9 · 1000+ Patients Treated</span>
             </div>
             <h1 className="mt-6 font-display text-5xl md:text-6xl leading-[1.05]">
               Gentle healing,
