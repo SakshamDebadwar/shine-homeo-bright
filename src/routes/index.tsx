@@ -434,7 +434,18 @@ function Home() {
             </div>
             <span>© {new Date().getFullYear()} Shri Laxmi Homeopathic Clinic</span>
           </div>
-          <div>Chikhali, Pimpri-Chinchwad · {PHONE}</div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/shreelaxmihomeopathyclinic/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-primary transition"
+            >
+              <Instagram className="w-4 h-4" /> @shreelaxmihomeopathyclinic
+            </a>
+            <span className="hidden md:inline">·</span>
+            <span>Chikhali, PCMC · {PHONE}</span>
+          </div>
         </div>
       </footer>
     </div>
