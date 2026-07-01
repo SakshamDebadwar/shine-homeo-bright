@@ -112,7 +112,7 @@ function Home() {
               <span className="italic text-primary">natural results.</span>
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-lg">
-              Trusted homeopathy in Chikhali, Pimpri-Chinchwad — safe, personalised
+              Trusted homeopathic consultant in Chikhali, Pimpri-Chinchwad — safe, personalised
               treatment for the whole family from skin & hair to chronic care.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
