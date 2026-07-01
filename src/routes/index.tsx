@@ -3,7 +3,7 @@ import heroImg from "@/assets/hero.jpg";
 import doctorImg from "@/assets/doctor.jpg";
 import {
   Phone, MapPin, Clock, Star, Leaf, HeartPulse, Baby, Brain, Sparkles,
-  Activity, Wind, Droplets, Bone, Moon, Scale, ShieldCheck, Flower2,
+  Activity, Wind, Droplets, Bone, Moon, Scale, ShieldCheck, Flower2, Instagram, Pill,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -213,7 +213,37 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT / DOCTOR */}
+      {/* REMEDIES / PRODUCTS */}
+      <section className="border-y border-border/60 bg-warm-gradient/30" style={{ background: "linear-gradient(135deg, oklch(0.97 0.05 90), oklch(0.95 0.08 70))" }}>
+        <div className="max-w-6xl mx-auto px-5 py-16">
+          <div className="flex items-end justify-between flex-wrap gap-4">
+            <div>
+              <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Featured remedies</div>
+              <h2 className="font-display text-3xl md:text-4xl mt-3">Classical homeopathic medicines</h2>
+            </div>
+            <div className="text-sm text-muted-foreground max-w-sm">
+              Prescribed only after a full consultation, tailored to your constitution.
+            </div>
+          </div>
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-4">
+            {[
+              "Calcarea Carbonica",
+              "Pain Relief Homeopathy",
+              "Digestive Care",
+              "Arnica Montana 30C",
+              "Skin Care",
+            ].map((p) => (
+              <div key={p} className="bg-card rounded-2xl p-5 shadow-soft border border-border/60 flex flex-col gap-3">
+                <div className="w-11 h-11 rounded-full bg-primary-gradient grid place-items-center">
+                  <Pill className="w-5 h-5 text-primary-foreground" />
+                </div>
+                <div className="font-medium leading-snug">{p}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="about" className="bg-secondary/40">
         <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-5 gap-12 items-center">
           <div className="md:col-span-2 relative">
@@ -231,15 +261,16 @@ function Home() {
             </div>
           </div>
           <div className="md:col-span-3">
-            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">About the clinic</div>
+            <div className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Meet the doctor</div>
             <h2 className="font-display text-4xl md:text-5xl mt-3">
-              Homeopathy that listens, first.
+              Dr. Sushma Debadwar
             </h2>
+            <div className="mt-2 text-muted-foreground">B.H.M.S · Classical Homeopath</div>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
-              At Shri Laxmi Homeopathic Clinic, every consultation begins with
-              understanding you — your history, lifestyle and lived experience.
-              We then craft a gentle, individualised remedy plan grounded in
-              classical homeopathy.
+              At Shri Laxmi Homeopathic Clinic, every consultation with Dr. Sushma
+              begins with understanding you — your history, lifestyle and lived
+              experience. She then crafts a gentle, individualised remedy plan
+              grounded in classical homeopathy, trusted by families across Pimpri-Chinchwad.
             </p>
             <ul className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
@@ -403,7 +434,18 @@ function Home() {
             </div>
             <span>© {new Date().getFullYear()} Shri Laxmi Homeopathic Clinic</span>
           </div>
-          <div>Chikhali, Pimpri-Chinchwad · {PHONE}</div>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.instagram.com/shreelaxmihomeopathyclinic/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-primary transition"
+            >
+              <Instagram className="w-4 h-4" /> @shreelaxmihomeopathyclinic
+            </a>
+            <span className="hidden md:inline">·</span>
+            <span>Chikhali, PCMC · {PHONE}</span>
+          </div>
         </div>
       </footer>
     </div>
