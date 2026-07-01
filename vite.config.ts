@@ -12,4 +12,8 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Production builds default to Cloudflare; pin Netlify explicitly so the
+  // deployed site gets a real SSR function instead of a Cloudflare Worker
+  // bundle that Netlify can't wire up (this is what caused "Page not found").
+  nitro: { preset: "netlify" },
 });
