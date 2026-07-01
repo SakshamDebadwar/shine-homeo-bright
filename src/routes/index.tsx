@@ -104,7 +104,7 @@ function Home() {
                   <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
                 ))}
               </span>
-              <span className="text-muted-foreground">4.9 · 22+ Google Reviews</span>
+              <span className="text-muted-foreground">4.9 · 1000+ Patients Treated</span>
             </div>
             <h1 className="mt-6 font-display text-5xl md:text-6xl leading-[1.05]">
               Gentle healing,
@@ -167,7 +167,7 @@ function Home() {
         <div className="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { n: "4.9★", l: "Google Rating" },
-            { n: "22+", l: "Happy Reviews" },
+            { n: "1000+", l: "Patients Treated" },
             { n: "18+", l: "Conditions Treated" },
             { n: "100%", l: "Natural Remedies" },
           ].map((s) => (
