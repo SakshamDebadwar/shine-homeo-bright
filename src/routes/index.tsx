@@ -167,7 +167,7 @@ function Home() {
         <div className="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           {[
             { n: "4.9★", l: "Google Rating" },
-            { n: "22+", l: "Happy Reviews" },
+            { n: "1000+", l: "Patients Treated" },
             { n: "18+", l: "Conditions Treated" },
             { n: "100%", l: "Natural Remedies" },
           ].map((s) => (
