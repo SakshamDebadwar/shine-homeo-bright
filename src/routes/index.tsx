@@ -1,11 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
-import doctorAsset from "@/assets/doctor-sushma.jpeg.asset.json";
+import doctorImg from "@/assets/doctor-sushma-clean.jpg";
 import {
   Phone, MapPin, Clock, Star, Leaf, HeartPulse, Baby, Brain, Sparkles,
   Activity, Wind, Droplets, Bone, Moon, Scale, ShieldCheck, Flower2, Instagram,
 } from "lucide-react";
-const doctorImg = doctorAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,24 +32,24 @@ const MAPS_URL =
   "https://www.google.com/maps/search/?api=1&query=Shri+Laxmi+Homeopathic+Clinic+Diagonal+Mall+Chikhali+Pimpri+Chinchwad";
 
 const services = [
-  { icon: Wind, name: "Asthma Care" },
-  { icon: Sparkles, name: "Hair Fall Treatment" },
-  { icon: Flower2, name: "Skin Allergy Care" },
-  { icon: HeartPulse, name: "Chronic Diseases" },
-  { icon: Baby, name: "Child Health Care" },
-  { icon: Bone, name: "Joint Pain Relief" },
-  { icon: Brain, name: "Migraine Treatment" },
-  { icon: Droplets, name: "Digestive Disorders" },
-  { icon: Moon, name: "Stress & Anxiety" },
-  { icon: Activity, name: "Thyroid Treatment" },
-  { icon: ShieldCheck, name: "PCOS / PCOD Care" },
-  { icon: Leaf, name: "Menstrual Disorders" },
-  { icon: Droplets, name: "Urinary Problems" },
-  { icon: Moon, name: "Sleep Disorders" },
-  { icon: HeartPulse, name: "Piles Treatment" },
-  { icon: Activity, name: "Diabetes Care" },
-  { icon: Scale, name: "Weight Management" },
-  { icon: Sparkles, name: "Skin Care" },
+  { icon: Wind, name: "Asthma Care", desc: "Reduce attacks and dependency on inhalers with constitutional homeopathy." },
+  { icon: Sparkles, name: "Hair Fall Treatment", desc: "Address root causes — stress, hormones, deficiencies — for lasting regrowth." },
+  { icon: Flower2, name: "Skin Allergy Care", desc: "Gentle, steroid-free relief from eczema, hives, rashes and chronic itching." },
+  { icon: HeartPulse, name: "Chronic Diseases", desc: "Long-term support for BP, cholesterol and lifestyle conditions." },
+  { icon: Baby, name: "Child Health Care", desc: "Safe remedies for coughs, colds, immunity and growth in kids." },
+  { icon: Bone, name: "Joint Pain Relief", desc: "Ease arthritis, sciatica and stiffness without long-term painkillers." },
+  { icon: Brain, name: "Migraine Treatment", desc: "Cut frequency and intensity of headaches with individualised care." },
+  { icon: Droplets, name: "Digestive Disorders", desc: "Relief from acidity, IBS, bloating and chronic indigestion." },
+  { icon: Moon, name: "Stress & Anxiety", desc: "Calm the mind and restore balance with non-sedating remedies." },
+  { icon: Activity, name: "Thyroid Treatment", desc: "Regulate hypo/hyperthyroid symptoms alongside your reports." },
+  { icon: ShieldCheck, name: "PCOS / PCOD Care", desc: "Regularise cycles, manage weight and improve fertility naturally." },
+  { icon: Leaf, name: "Menstrual Disorders", desc: "Relief from painful, irregular or heavy periods at the root." },
+  { icon: Droplets, name: "Urinary Problems", desc: "Treat recurring UTIs, stones and kidney concerns gently." },
+  { icon: Moon, name: "Sleep Disorders", desc: "Restore deep, natural sleep without habit-forming medication." },
+  { icon: HeartPulse, name: "Piles Treatment", desc: "Non-surgical relief from piles, fissures and fistula." },
+  { icon: Activity, name: "Diabetes Care", desc: "Support blood sugar control and prevent complications." },
+  { icon: Scale, name: "Weight Management", desc: "Sustainable weight loss addressing metabolism and hormones." },
+  { icon: Sparkles, name: "Skin Care", desc: "Clearer skin for acne, pigmentation and psoriasis over time." },
 ];
 
 const reviews = [
