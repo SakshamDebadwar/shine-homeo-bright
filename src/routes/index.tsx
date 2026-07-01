@@ -202,6 +202,7 @@ function Home() {
                 <s.icon className="w-5 h-5 text-primary group-hover:text-primary-foreground transition" />
               </div>
               <div className="mt-4 font-medium">{s.name}</div>
+              <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}
         </div>
