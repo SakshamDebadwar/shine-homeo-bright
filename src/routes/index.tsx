@@ -229,7 +229,7 @@ function Home() {
             <h2 className="font-display text-4xl md:text-5xl mt-3">
               Dr. Sushma Debadwar
             </h2>
-            <div className="mt-2 text-muted-foreground">B.H.M.S , M.D , Classical Homeopath</div>
+            <div className="mt-2 text-muted-foreground">B.H.M.S, M.D · Classical Homeopath</div>
             <p className="mt-5 text-muted-foreground text-lg leading-relaxed">
               At Shri Laxmi Homeopathic Clinic, every consultation with Dr. Sushma
               begins with understanding you — your history, lifestyle and lived
