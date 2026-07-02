@@ -168,7 +168,7 @@ function Home() {
           {[
             { n: "4.9★", l: "Google Rating" },
             { n: "1000+", l: "Patients Treated" },
-            { n: "18+", l: "Conditions Treated" },
+            { n: "90+", l: "Conditions Treated" },
             { n: "100%", l: "Natural Remedies" },
           ].map((s) => (
             <div key={s.l}>
